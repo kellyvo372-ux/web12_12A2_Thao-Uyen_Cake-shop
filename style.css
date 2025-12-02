@@ -341,6 +341,27 @@ h1, h2, h3, h4, h5 {
         0 0 24px #FF4FBE;
 }
 
+/* Each "page" is a full-screen section */
+.page {
+    height: 100vh;               /* full screen height */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+}
+
+/* Odd pages = black */
+.page:nth-child(odd) {
+    background-color: #000000;
+}
+
+/* Even pages = pink */
+.page:nth-child(even) {
+    background-color: #FF4FBE;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Pacifico", cursive !important;
     letter-spacing: 1px;
