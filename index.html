@@ -36,11 +36,12 @@ body {font-family: "Lato", sans-serif}
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#min" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MIN CAKE SHOP</a>
-  <a href="#menu" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MENU</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+  <a href="#min" class="w3-bar-item w3-button w3-padding-large">MIN CAKE SHOP</a>
+  <a href="#menu" class="w3-bar-item w3-button w3-padding-large">MENU</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">MERCH</a>
 </div>
+
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
@@ -69,6 +70,7 @@ body {font-family: "Lato", sans-serif}
   </div>
 
   <!-- The Band Section -->
+   <div id="min">
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
     <h2 class="w3-wide">MIN CAKE SHOP</h2>
     <p class="w3-opacity"><i>Góc nhỏ của Min</i></p>
@@ -89,8 +91,10 @@ body {font-family: "Lato", sans-serif}
       </div>
     </div>
   </div>
+   </div>
 
   <!-- The Tour Section -->
+   <div id="menu">
   <div class="w3-black" id="tour">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
       <h2 class="w3-wide w3-center">MENU</h2>
@@ -129,6 +133,7 @@ body {font-family: "Lato", sans-serif}
       </div>
     </div>
   </div>
+  </div>  
 
   <!-- Ticket Modal -->
   <div id="ticketModal" class="w3-modal">
@@ -149,6 +154,7 @@ body {font-family: "Lato", sans-serif}
       </div>
     </div>
   </div>
+
 
   <!-- The Contact Section -->
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
@@ -228,6 +234,28 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+</script>
+
+<script>
+document.querySelectorAll('#navDemo a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault(); 
+    
+    const targetID = this.getAttribute('href').replace('#', '');
+    const target = document.getElementById(targetID);
+
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+
+    // Nếu bạn có function đóng menu, nó sẽ tự gọi
+    if (typeof myFunction === "function") {
+      myFunction();
+    }
+  });
+});
 </script>
 
 </body>
