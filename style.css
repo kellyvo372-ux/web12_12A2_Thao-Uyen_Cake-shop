@@ -111,3 +111,27 @@ a:hover {
 /* ===== Simple reset for images/video etc ===== */
 img, video { max-width: 100%; height: auto; }
 /* ===== End of CSS ===== */
+
+.black-section {
+    background-color: #000000;
+    color: white; /* text readable on black */
+}
+
+.pink-section {
+    background-color: #FF4FBE;
+    color: black; /* text readable on pink */
+}
+
+/* optional layout */
+.black-section, .pink-section {
+    min-height: 100vh;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.black-section a, .pink-section a,
+.black-section button, .pink-section button {
+    color: inherit; /* buttons/links follow text color */
+}
