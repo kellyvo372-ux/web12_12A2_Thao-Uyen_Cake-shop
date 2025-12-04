@@ -1,195 +1,3 @@
-/* =================== GLOBAL =================== */
-html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #0B0B0E; /* deep black */
-    color: #E7D2FF;  /* neon lavender text */
-    font-family: "Poppins", sans-serif;
-}
-
-/* =================== NEON BORDER =================== */
-.neon-border {
-    border: 2px solid #B185FF; /* purple */
-    box-shadow: 
-        0 0 12px #B185FF,
-        0 0 25px #FF4FBE,
-        0 0 40px #6BCBFF;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-/* =================== HEADINGS =================== */
-h1, h2, h3, h4, h5, h6 {
-    color: #FF4FBE; /* neon pink */
-    text-shadow: 
-        0 0 5px #B185FF,
-        0 0 10px #6BCBFF;
-    font-family: "Pacifico", cursive;
-    letter-spacing: 1px;
-}
-
-/* =================== NEON TEXT =================== */
-.neon-text {
-    color: #6BCBFF; /* neon blue */
-    text-shadow: 
-        0 0 8px #6BCBFF,
-        0 0 16px #B185FF,
-        0 0 24px #FF4FBE;
-}
-
-/* =================== NAVBAR =================== */
-.navbar {
-    background-color: #0B0B0E;
-    border-bottom: 2px solid #B185FF;
-    box-shadow: 0 0 25px #B185FF55;
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 10px 20px;
-}
-
-.navbar ul li a {
-    color: #E7D2FF;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 6px 12px;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-}
-
-.navbar ul li a:hover {
-    background: linear-gradient(90deg, #B185FF, #FF4FBE, #6BCBFF);
-    color: #0B0B0E;
-    box-shadow: 0 0 15px #FF4FBE;
-}
-
-/* =================== BUTTONS =================== */
-button, .w3-button, .w3-btn {
-    background: linear-gradient(135deg, #B185FF, #FF4FBE);
-    color: #0B0B0E;
-    font-weight: bold;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 0 0 12px #B185FF;
-    cursor: pointer;
-    padding: 10px 20px;
-    transition: all 0.3s ease;
-}
-
-button:hover, .w3-button:hover, .w3-btn:hover {
-    background: linear-gradient(135deg, #6BCBFF, #FF4FBE);
-    box-shadow: 
-        0 0 20px #FF4FBE,
-        0 0 30px #6BCBFF;
-}
-
-/* =================== HERO =================== */
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-    background-color: #0B0B0E;
-}
-
-.hero h2, .hero p {
-    margin: 10px 0;
-}
-
-/* =================== BEST SELLER =================== */
-.bestseller-section {
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.bestseller-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-}
-
-.cake-item img {
-    width: 250px;
-    border-radius: 10px;
-}
-
-.cake-item figcaption {
-    margin-top: 8px;
-    font-weight: bold;
-    color: #FF4FBE;
-}
-
-/* =================== MENU =================== */
-.menu-section {
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.menu-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
-    justify-items: center;
-}
-
-.menu-item img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.menu-item h3 {
-    margin: 10px 0 5px;
-    color: #FF4FBE;
-}
-
-.menu-item p {
-    font-size: 0.95rem;
-    color: #E7D2FF;
-}
-
-/* =================== ABOUT / CONTACT =================== */
-.about-section, .contact-section {
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.about-section p, .contact-section p {
-    color: #E7D2FF;
-}
-
-/* =================== FOOTER =================== */
-.footer {
-    background-color: #0B0B0E;
-    text-align: center;
-    padding: 20px 0;
-    border-top: 2px solid #B185FF;
-    box-shadow: 0 0 15px #B185FF55;
-}
-
-.footer p {
-    color: #E7D2FF;
-}
-
-/* =================== RESPONSIVE =================== */
-@media (max-width: 768px) {
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .bestseller-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .menu-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* =================== IMPORT FONTS =================== */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap');
 
@@ -226,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* =================== NEON TEXT =================== */
 .neon-text {
-    color: #6BCBFF; /* neon blue */
+    color: #ff4fbe; /* neon blue */
     text-shadow: 
         0 0 8px #6BCBFF,
         0 0 16px #B185FF,
@@ -402,8 +210,8 @@ button:hover, .w3-button:hover, .w3-btn:hover {
 /* =================== MENU ITEM =================== */
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
     justify-items: center;
     padding: 20px;
 }
@@ -411,11 +219,13 @@ button:hover, .w3-button:hover, .w3-btn:hover {
 .menu-item {
     background-color: #FFFFFF; /* khung trắng */
     border-radius: 12px;
-    box-shadow: 0 0 15px #B185FF33; /* glow nhẹ */
-    padding: 20px;
+    box-shadow: 0 0 12px #B185FF33; /* glow nhẹ */
+    padding: 12px;
     text-align: center;
     transition: all 0.3s ease;
     width: 100%;
+    max-width: 220px;
+    box-sizing: border-box;
 }
 
 .menu-item:hover {
@@ -425,8 +235,9 @@ button:hover, .w3-button:hover, .w3-btn:hover {
 /* Hình ảnh */
 .menu-item img {
     width: 100%;
+    max-width: 180px;
     border-radius: 10px;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 /* Tên món */
@@ -434,98 +245,25 @@ button:hover, .w3-button:hover, .w3-btn:hover {
     font-family: "Pacifico", cursive;
     font-weight: bold;
     color: #FF4FBE; /* hồng neon */
-    margin: 10px 0 6px;
+    margin: 6px 0 4px;
 }
 
 /* Vị món */
 .menu-item .flavor {
     font-style: italic;
     color: #555555; /* xám */
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 
 /* Mô tả */
 .menu-item p.description {
     color: #000000; /* đen */
     font-weight: normal;
-    font-size: 0.95rem;
-    margin-bottom: 12px;
-}
-
-/* Nút Mua ngay */
-.menu-item button.buy-btn {
-    background: linear-gradient(135deg, #B185FF, #FF4FBE);
-    color: #0B0B0E;
-    font-weight: bold;
-    border: none;
-    border-radius: 10px;
-    padding: 8px 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.menu-item button.buy-btn:hover {
-    background: linear-gradient(135deg, #6BCBFF, #FF4FBE);
-    box-shadow: 0 0 12px #FF4FBE, 0 0 18px #6BCBFF;
-    color: #FFFFFF;
-}
-
-/* =================== MENU GRID =================== */
-.menu-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* khung nhỏ hơn */
-    gap: 20px; /* khoảng cách giữa các khung */
-    justify-items: center;
-    padding: 20px;
-}
-
-/* =================== MENU ITEM =================== */
-.menu-item {
-    background-color: #FFFFFF;
-    border-radius: 12px;
-    padding: 12px; /* nhỏ hơn để khung gọn */
-    box-shadow: 0 0 12px #B185FF33;
-    text-align: center;
-    transition: all 0.3s ease;
-    width: 100%;
-    max-width: 220px; /* giới hạn chiều rộng */
-    box-sizing: border-box; /* tránh padding làm khung vượt */
-}
-
-.menu-item:hover {
-    box-shadow: 0 0 20px #FF4FBE55, 0 0 30px #6BCBFF55;
-}
-
-/* =================== HÌNH ẢNH =================== */
-.menu-item img {
-    width: 100%;
-    max-width: 180px; /* giảm ảnh nhỏ hơn */
-    border-radius: 10px;
-    margin-bottom: 8px;
-}
-
-/* =================== TÊN, VỊ, MÔ TẢ =================== */
-.menu-item h3 {
-    font-family: "Pacifico", cursive;
-    font-weight: bold;
-    color: #FF4FBE;
-    margin: 6px 0 4px;
-}
-
-.menu-item .flavor {
-    font-style: italic;
-    color: #555555;
-    margin-bottom: 4px;
-}
-
-.menu-item p.description {
-    color: #000000;
-    font-weight: normal;
     font-size: 0.9rem;
     margin-bottom: 8px;
 }
 
-/* =================== NÚT MUA NGAY =================== */
+/* Nút Mua ngay */
 .menu-item button.buy-btn {
     background: linear-gradient(135deg, #B185FF, #FF4FBE);
     color: #0B0B0E;
@@ -633,4 +371,92 @@ header, .navbar {
     z-index: 1000;
     height: 70px;
     line-height: 20px;
+}
+
+/* MAIN CONTAINER (2 CỘT CÂN ĐỐI) */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+/* LEFT SIDE */
+.contact-info {
+  flex: 1;       /* chiếm 50% */
+  color: #E7D2FF;
+}
+
+.contact-info h2 {
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  margin: 6px 0;
+  font-size: 1.05rem;
+}
+
+.contact-note {
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+/* RIGHT SIDE: CONTACT FORM */
+.contact-form {
+  flex: 1;       /* chiếm 50% */
+}
+
+.form-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #B185FF;
+  background-color: #0B0B0E;
+  color: #E7D2FF;
+  font-size: 1rem;
+}
+
+textarea {
+  height: 140px;
+  resize: vertical;
+  margin-bottom: 12px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #FF4FBE;
+  box-shadow: 0 0 10px #FF4FBE;
+}
+
+/* BUTTON */
+.send-btn {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #B185FF, #FF4FBE);
+  color: #0B0B0E;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  float: right;
+  box-shadow: 0 0 12px #B185FF;
+}
+
+.send-btn:hover {
+  background: linear-gradient(135deg, #6BCBFF, #FF4FBE);
+  box-shadow: 0 0 20px #FF4FBE, 0 0 30px #6BCBFF;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 25px;
+  }
 }
