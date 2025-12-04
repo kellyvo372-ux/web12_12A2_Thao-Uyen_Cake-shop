@@ -120,6 +120,19 @@ button:hover, .w3-button:hover, .w3-btn:hover {
     padding: 60px 20px;
 }
 
+.bestseller-section{
+    background-color: #FF4FBE
+}
+
+.bestseller-section h1{
+    color: #000000ff; /* neon pink */
+    text-shadow: 
+        0 0 5px #B185FF,
+        0 0 10px #6BCBFF;
+    font-family: "Pacifico", cursive; /* ngọt ngào */
+    letter-spacing: 1px;
+}
+
 .bestseller-list {
     display: flex;
     flex-wrap: wrap;
@@ -135,7 +148,7 @@ button:hover, .w3-button:hover, .w3-btn:hover {
 .cake-item figcaption {
     margin-top: 8px;
     font-weight: bold;
-    color: #FF4FBE;
+    color: #E7D2FF;
 }
 
 /* =================== MENU =================== */
@@ -179,7 +192,7 @@ button:hover, .w3-button:hover, .w3-btn:hover {
 
 /* =================== FOOTER =================== */
 .footer {
-    background-color: #0B0B0E;
+    background-color: #FF4FBE;
     text-align: center;
     padding: 20px 0;
     border-top: 2px solid #B185FF;
@@ -187,7 +200,7 @@ button:hover, .w3-button:hover, .w3-btn:hover {
 }
 
 .footer p {
-    color: #E7D2FF;
+    color: #000000ff;
 }
 
 /* =================== RESPONSIVE =================== */
@@ -336,14 +349,14 @@ button:hover, .w3-button:hover, .w3-btn:hover {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  background: rgba(0,0,0,0.4);
+  background: rgba(255,79,190,0.4);
   padding: 10px 20px;
   border-radius: 10px;
 }
 
 .hero-slider .slide-info h2 {
   font-family: "Pacifico", cursive;
-  color: #FF4FBE;
+  color: #000000ff;
   margin: 0 0 5px;
   font-size: 1.8rem;
   text-shadow: 0 0 5px #B185FF, 0 0 10px #6BCBFF;
@@ -354,6 +367,19 @@ button:hover, .w3-button:hover, .w3-btn:hover {
   color: #E7D2FF;
   font-size: 1rem;
   margin: 0;
+}
+
+.about-section{
+    background-color: rgba(255, 79, 190, 1)
+}
+
+.about-section h1{
+    color: #000000ff; /* neon pink */
+    text-shadow: 
+        0 0 5px #B185FF,
+        0 0 10px #6BCBFF;
+    font-family: "Pacifico", cursive; /* ngọt ngào */
+    letter-spacing: 1px;
 }
 
 .about-section p {
@@ -409,11 +435,24 @@ header, .navbar {
 
 .form-row {
   display: flex;
-  gap: 12px;
-  margin-bottom: 12px;
+  color: #E7D2FF;
+  width: 100%;
+  gap: 15px;
+  margin-bottom: 15px;
 }
 
-input, textarea {
+.form-row input {
+  flex: 1;  
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #B185FF;
+  background-color: #0B0B0E;  
+  color: #E7D2FF;
+  font-size: 1rem;     
+  resize: vertical;
+}
+
+textarea {
   width: 100%;
   padding: 12px;
   border-radius: 8px;
@@ -421,6 +460,8 @@ input, textarea {
   background-color: #0B0B0E;
   color: #E7D2FF;
   font-size: 1rem;
+  height: 140px;
+  resize: vertical;
 }
 
 textarea {
@@ -434,6 +475,7 @@ input:focus, textarea:focus {
   border-color: #FF4FBE;
   box-shadow: 0 0 10px #FF4FBE;
 }
+
 
 /* BUTTON */
 .send-btn {
