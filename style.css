@@ -1,19 +1,16 @@
-/* =================== IMPORT FONTS =================== */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap');
 
-/* =================== GLOBAL =================== */
 html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #0B0B0E; /* deep black */
-    color: #E7D2FF;  /* neon lavender text */
+    background-color: #0B0B0E; 
+    color: #E7D2FF;  
     font-family: "Poppins", sans-serif;
 }
 
-/* =================== NEON BORDER =================== */
 .neon-border {
-    border: 2px solid #B185FF; /* purple */
+    border: 2px solid #B185FF;
     box-shadow: 
         0 0 12px #B185FF,
         0 0 25px #FF4FBE,
@@ -22,26 +19,23 @@ html, body {
     padding: 10px;
 }
 
-/* =================== HEADINGS =================== */
 h1, h2, h3, h4, h5, h6 {
-    color: #FF4FBE; /* neon pink */
+    color: #FF4FBE; 
     text-shadow: 
         0 0 5px #B185FF,
         0 0 10px #6BCBFF;
-    font-family: "Pacifico", cursive; /* ngọt ngào */
+    font-family: "Pacifico", cursive; 
     letter-spacing: 1px;
 }
 
-/* =================== NEON TEXT =================== */
 .neon-text {
-    color: #ff4fbe; /* neon blue */
+    color: #ff4fbe; 
     text-shadow: 
         0 0 8px #6BCBFF,
         0 0 16px #B185FF,
         0 0 24px #FF4FBE;
 }
 
-/* =================== NAVBAR =================== */
 .navbar {
     background-color: #0B0B0E;
     border-bottom: 2px solid #B185FF;
@@ -57,7 +51,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar ul li {
-    /* ô màu cho từng menu item */
     background: linear-gradient(135deg, #B185FF33, #FF4FBE33, #6BCBFF33);
     border: 1px solid #B185FF;
     border-radius: 10px;
@@ -72,7 +65,6 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
 }
 
-/* Hover: gradient + glow */
 .navbar ul li:hover {
     background: linear-gradient(90deg, #B185FF, #FF4FBE, #6BCBFF);
     box-shadow: 0 0 15px #FF4FBE, 0 0 25px #6BCBFF;
@@ -82,7 +74,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #0B0B0E;
 }
 
-/* =================== BUTTONS =================== */
 button, .w3-button, .w3-btn {
     background: linear-gradient(135deg, #B185FF, #FF4FBE);
     color: #0B0B0E;
@@ -103,18 +94,16 @@ button:hover, .w3-button:hover, .w3-btn:hover {
         0 0 30px #6BCBFF;
 }
 
-/* =================== HERO =================== */
-.hero {
+.cake {
     text-align: center;
     padding: 100px 20px;
     background-color: #0B0B0E;
 }
 
-.hero h2, .hero p {
+.cake h2, .cake p {
     margin: 10px 0;
 }
 
-/* =================== BEST SELLER =================== */
 .bestseller-section {
     text-align: center;
     padding: 60px 20px;
@@ -151,7 +140,6 @@ button:hover, .w3-button:hover, .w3-btn:hover {
     color: #E7D2FF;
 }
 
-/* =================== MENU =================== */
 .menu-section {
     text-align: center;
     padding: 60px 20px;
@@ -172,7 +160,7 @@ button:hover, .w3-button:hover, .w3-btn:hover {
 .menu-item h3 {
     margin: 10px 0 5px;
     color: #FF4FBE;
-    font-family: "Pacifico", cursive; /* ngọt ngào */
+    font-family: "Pacifico", cursive; 
 }
 
 .menu-item p {
@@ -180,7 +168,6 @@ button:hover, .w3-button:hover, .w3-btn:hover {
     color: #E7D2FF;
 }
 
-/* =================== ABOUT / CONTACT =================== */
 .about-section, .contact-section {
     text-align: center;
     padding: 60px 20px;
@@ -190,7 +177,6 @@ button:hover, .w3-button:hover, .w3-btn:hover {
     color: #E7D2FF;
 }
 
-/* =================== FOOTER =================== */
 .footer {
     background-color: #FF4FBE;
     text-align: center;
@@ -203,7 +189,6 @@ button:hover, .w3-button:hover, .w3-btn:hover {
     color: #000000ff;
 }
 
-/* =================== RESPONSIVE =================== */
 @media (max-width: 768px) {
     .navbar ul {
         flex-direction: column;
@@ -220,7 +205,6 @@ button:hover, .w3-button:hover, .w3-btn:hover {
     }
 }
 
-/* =================== MENU ITEM =================== */
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -230,9 +214,9 @@ button:hover, .w3-button:hover, .w3-btn:hover {
 }
 
 .menu-item {
-    background-color: #FFFFFF; /* khung trắng */
+    background-color: #FFFFFF; 
     border-radius: 12px;
-    box-shadow: 0 0 12px #B185FF33; /* glow nhẹ */
+    box-shadow: 0 0 12px #B185FF33; 
     padding: 12px;
     text-align: center;
     transition: all 0.3s ease;
@@ -242,10 +226,9 @@ button:hover, .w3-button:hover, .w3-btn:hover {
 }
 
 .menu-item:hover {
-    box-shadow: 0 0 20px #FF4FBE55, 0 0 30px #6BCBFF55; /* glow khi hover */
+    box-shadow: 0 0 20px #FF4FBE55, 0 0 30px #6BCBFF55; 
 }
 
-/* Hình ảnh */
 .menu-item img {
     width: 100%;
     max-width: 180px;
@@ -253,30 +236,26 @@ button:hover, .w3-button:hover, .w3-btn:hover {
     margin-bottom: 8px;
 }
 
-/* Tên món */
 .menu-item h3 {
     font-family: "Pacifico", cursive;
     font-weight: bold;
-    color: #FF4FBE; /* hồng neon */
+    color: #FF4FBE; 
     margin: 6px 0 4px;
 }
 
-/* Vị món */
 .menu-item .flavor {
     font-style: italic;
-    color: #555555; /* xám */
+    color: #555555; 
     margin-bottom: 4px;
 }
 
-/* Mô tả */
 .menu-item p.description {
-    color: #000000; /* đen */
+    color: #000000; 
     font-weight: normal;
     font-size: 0.9rem;
     margin-bottom: 8px;
 }
 
-/* Nút Mua ngay */
 .menu-item button.buy-btn {
     background: linear-gradient(135deg, #B185FF, #FF4FBE);
     color: #0B0B0E;
@@ -294,7 +273,6 @@ button:hover, .w3-button:hover, .w3-btn:hover {
     color: #FFFFFF;
 }
 
-/* =================== RESPONSIVE =================== */
 @media (max-width: 768px) {
     .menu-grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -311,18 +289,16 @@ button:hover, .w3-button:hover, .w3-btn:hover {
     }
 }
 
-/* KHUNG SLIDER */
-.hero-slider {
+.cake-slider {
   position: relative;
-  width: 100vw;   /* 100% viewport width */
-  height: 400px;  /* chiều cao slider */
+  width: 100vw;   
+  height: 400px; 
   overflow: hidden;
-  margin: 0;      /* loại bỏ margin */
-  padding: 0;     /* loại bỏ padding */
+  margin: 0;     
+  padding: 0;   
 }
 
-/* SLIDE */
-.hero-slider .slide {
+.cake-slider .slide {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -330,31 +306,29 @@ button:hover, .w3-button:hover, .w3-btn:hover {
   transition: opacity 1s ease-in-out;
 }
 
-.hero-slider .slide.active {
+.cake-slider .slide.active {
   opacity: 1;
 }
 
-/* HÌNH ẢNH */
-.hero-slider img {
-  width: 100%;        /* chiếm full ngang */
-  height: 100%;       /* chiếm full chiều cao của slider */
-  object-fit: cover;  /* giữ tỉ lệ, crop nếu cần */
-  display: block;     /* loại bỏ khoảng trắng mặc định */
+.cake-slider img {
+  width: 100%;        
+  height: 100%;       
+  object-fit: cover;  
+  display: block;    
 }
 
-/* CHỮ Ở DƯỚI */
-.hero-slider .slide-info {
+.cake-slider .slide-info {
   position: absolute;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  background: rgba(255,79,190,0.4);
+  background: rgba(255, 79, 190,0.4);
   padding: 10px 20px;
   border-radius: 10px;
 }
 
-.hero-slider .slide-info h2 {
+.cake-slider .slide-info h2 {
   font-family: "Pacifico", cursive;
   color: #000000ff;
   margin: 0 0 5px;
@@ -362,7 +336,7 @@ button:hover, .w3-button:hover, .w3-btn:hover {
   text-shadow: 0 0 5px #B185FF, 0 0 10px #6BCBFF;
 }
 
-.hero-slider .slide-info p {
+.cake-slider .slide-info p {
   font-family: "Poppins", sans-serif;
   color: #E7D2FF;
   font-size: 1rem;
@@ -374,21 +348,21 @@ button:hover, .w3-button:hover, .w3-btn:hover {
 }
 
 .about-section h1{
-    color: #000000ff; /* neon pink */
+    color: #000000ff; 
     text-shadow: 
         0 0 5px #B185FF,
         0 0 10px #6BCBFF;
-    font-family: "Pacifico", cursive; /* ngọt ngào */
+    font-family: "Pacifico", cursive; 
     letter-spacing: 1px;
 }
 
 .about-section p {
-    max-width: 600px;   /* giới hạn chiều rộng dòng chữ */
-    margin: 0 auto;     /* canh giữa */
-    text-align: center; /* chữ vẫn căn giữa */
-    line-height: 1.6;   /* khoảng cách giữa các dòng */
-    font-size: 1rem;    /* kích thước chữ vừa phải */
-    color: #E7D2FF;     /* giữ màu neon/light text */
+    max-width: 600px;   
+    margin: 0 auto;    
+    text-align: center; 
+    line-height: 1.6;  
+    font-size: 1rem;   
+    color: #E7D2FF;   
 }
 header, .navbar {
     position: sticky;
@@ -399,7 +373,6 @@ header, .navbar {
     line-height: 20px;
 }
 
-/* MAIN CONTAINER (2 CỘT CÂN ĐỐI) */
 .contact-container {
   display: flex;
   justify-content: space-between;
@@ -408,9 +381,8 @@ header, .navbar {
   padding: 40px 20px;
 }
 
-/* LEFT SIDE */
 .contact-info {
-  flex: 1;       /* chiếm 50% */
+  flex: 1;       
   color: #E7D2FF;
 }
 
@@ -428,9 +400,8 @@ header, .navbar {
   opacity: 0.9;
 }
 
-/* RIGHT SIDE: CONTACT FORM */
 .contact-form {
-  flex: 1;       /* chiếm 50% */
+  flex: 1;       
 }
 
 .form-row {
@@ -476,8 +447,6 @@ input:focus, textarea:focus {
   box-shadow: 0 0 10px #FF4FBE;
 }
 
-
-/* BUTTON */
 .send-btn {
   padding: 10px 20px;
   background: linear-gradient(135deg, #B185FF, #FF4FBE);
@@ -495,10 +464,34 @@ input:focus, textarea:focus {
   box-shadow: 0 0 20px #FF4FBE, 0 0 30px #6BCBFF;
 }
 
-/* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
     gap: 25px;
   }
+}
+
+.promo-aside {
+  max-width: 350px;
+  background-color: #E7D2FF;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 12px;
+  text-align: center;
+  color: #000000ff;
+  box-shadow: 
+    0 0 12px #B185FF,
+    0 0 25px #FF4FBE,
+    0 0 40px #6BCBFF;
+}
+
+.promo-aside h2 {
+  margin-bottom: 12px;
+  color: #000000ff;
+}
+
+.aside-highlight {
+  color: #FF4FBE;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
