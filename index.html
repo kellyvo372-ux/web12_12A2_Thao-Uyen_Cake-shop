@@ -8,14 +8,11 @@
 </head>
 
 <body>
-
-    <!-- ================= HEADER ================ -->
     <header class="header">
         <div class="logo">
             <h1>---Min Cake Shop---</h1>
         </div>
 
-        <!-- NAVIGATION -->
         <nav class="navbar">
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -27,12 +24,9 @@
         </nav>
     </header>
 
-
-
-    <!-- ================= MAIN CONTENT ================ -->
     <main>
 <section id="home"></section>
-<section class="hero-slider">
+<section class="cake-slider">
   <div class="slide active">
     <img src="https://i.pinimg.com/736x/fe/f2/87/fef287bf8c5fa0220dc11ee76b64de14.jpg" alt="Red velvet" style="width:100%">
     <div class="slide-info">
@@ -63,7 +57,7 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  const slides = document.querySelectorAll('.hero-slider .slide');
+  const slides = document.querySelectorAll('.cake-slider .slide');
   let current = 0;
 
   function showNextSlide() {
@@ -76,16 +70,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-        <!-- HERO / BANNER -->
-        <section class="hero">
+        <section class="cake">
             <h2>Welcome to Min Cake Shop</h2>
             <p>Cửa hàng bánh ngọt homemade – tươi ngon mỗi ngày!</p>
             <img src="https://i.pinimg.com/1200x/0e/47/d0/0e47d0dfb2e6d8e89fb859bf268c86d5.jpg" alt="Min">
         </section>
 
-
-
-        <!-- BEST SELLER -->
         <section id="bestseller" class="bestseller-section">
             <h1>Best Seller</h1>
 
@@ -109,9 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         </section>
 
-
-
-        <!-- MENU -->
 <section id="menu" class="menu-section">
     <h1>Menu</h1>
 
@@ -152,7 +139,13 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
 </section>
 
-        <!-- ABOUT US -->
+<aside class="promo-aside neon-border">
+  <h2 class="neon-text">Ưu đãi hôm nay</h2>
+  <p class="aside-highlight">Giảm 15% cho tất cả Cupcake!</p>
+  <p class="aside-highlight">Mua 3 tặng 1 cho các loại cookie!</p>
+  <p>Áp dụng đến hết tháng 12.</p>
+</aside>
+
         <section id="about" class="about-section">
             <h1>About</h1>
             <p>
@@ -164,7 +157,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   <div class="contact-container">
 
-    <!-- LEFT: CONTACT INFO -->
     <div class="contact-info">
       <h2 class="neon-text">Contact</h2>
 
@@ -174,7 +166,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     </div>
 
-    <!-- RIGHT SIDE: CONTACT FORM -->
     <div class="contact-form">
       <form action="/action_page.php" target="_blank">
 
@@ -197,7 +188,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     </main>
 
-    <!-- ================= FOOTER ================ -->
     <footer class="footer">
         <p>© 2025 Min Cake Shop — All rights reserved.</p>
     </footer>
