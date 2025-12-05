@@ -114,11 +114,11 @@ button:hover, .w3-button:hover, .w3-btn:hover {
 }
 
 .bestseller-section h1{
-    color: #000000ff; /* neon pink */
+    color: #000000ff; 
     text-shadow: 
         0 0 5px #B185FF,
         0 0 10px #6BCBFF;
-    font-family: "Pacifico", cursive; /* ngọt ngào */
+    font-family: "Pacifico", cursive; 
     letter-spacing: 1px;
 }
 
